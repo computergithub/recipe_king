@@ -1,0 +1,140 @@
+header {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3) url('../src/assets/image/bg2.PNG');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.picture {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* .log-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 13rem;
+    padding: 1rem;
+    color: white;
+    background-color: #350055;
+    justify-content: space-around;
+    } */
+
+.log-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 17rem;
+    padding: 20px;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.log-container h1 {
+    font-family: ui-rounded;
+    margin-bottom: 1.8rem;
+    border-radius: 3px;
+    border-bottom: 2px solid white;
+    font-size: 2.5rem;
+    width: 10rem;
+    margin-left: 1.3rem;
+    padding: 0 0px 1px 10px;
+}
+
+.log-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.log-box i {
+    color: rgb(153, 152, 152);
+}
+
+input {
+    font-size: 1.1rem;
+    font-family: monospace;
+    background: none;
+    padding: 0.3rem 5px;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+    height: 20px;
+    /* width: 15rem; */
+}
+
+input::placeholder {
+    color: #bdbdbd;
+}
+input:focus{
+    outline: none;
+}
+
+.log-btn {
+    cursor: pointer;
+    width: 5rem;
+    background: none;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    border-radius: 6px;
+    margin: 9px 0 0 9px;
+    padding: .3rem;
+    transition: all 400ms ease;
+}
+
+.log-btn:hover {
+    background-color: rgb(15, 15, 15);
+    border: 1px solid white;
+    border: none;
+}
+
+
+.picture img {
+    height: 20rem;
+}
+
+.sing-sec {
+    display: flex;
+    height: 3rem;
+    width: 15rem;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.sing-sec button{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+.sing-sec h4{
+    color: #CDDC39;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .picture img {
+        height: 10rem;
+    }
+
+    .log-container h1 {
+        font-size: 1.1rem;
+        width: 5rem;
+
+    }
+
+
+}
