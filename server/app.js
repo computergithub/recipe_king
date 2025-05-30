@@ -28,10 +28,10 @@ App.use("/recipe", require('./routes/recipe'))
 //         .then(user => res.json(user))
 //         .catch(err => res.json(err))
 // }) 
-App.get("/",(req,res)=>{
+/*App.get("/",(req,res)=>{
     App.use(express.static(path.resolve(__dirname,"client","dist")));
     res.sendFile(path.resolve(__dirname,"client","dist","index.html"));
-})
+})*/
 
 App.listen(PORT, () => {
     console.log(`done !", ${PORT}`)
